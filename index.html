@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <title>Learning Skill Center</title>
 </head>
 
 <body class="bg-light">
@@ -18,128 +19,356 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
+            <div class="col-sm-4">
+                <div class="input-group mb-3 input-group-sm">
                     <label for="" class="input-group-text">First Name:</label>
-                    <input type="text" class="form-control" placeholder="" aria-label=""
+                    <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
                         aria-describedby="button-addon2">
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
+            <div class="col-sm-4">
+                <div class="input-group mb-3 input-group-sm">
                     <label for="" class="input-group-text">Last Name:</label>
-                    <input type="text" class="form-control" placeholder="" aria-label=""
-                        aria-describedby="button-addon2">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="input-group mb-3">
-                    <label for="" class="input-group-text">Age:</label>
-                    <input type="number" class="form-control" placeholder="" aria-label=""
+                    <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
                         aria-describedby="button-addon2">
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="input-group mb-3">
-                    <label for="" class="input-group-text">Birth Date:</label>
-                    <input type="date" class="form-control" placeholder="" aria-label=""
-                        aria-describedby="button-addon2">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="input-group mb-3">
+                <div class="input-group mb-3 input-group-sm">
                     <label for="" class="input-group-text">SSN:</label>
-                    <input type="text" class="form-control" placeholder="" aria-label=""
+                    <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
                         aria-describedby="button-addon2">
                 </div>
             </div>
         </div>
-        <table class="table table-sm table-borderless">
-            <thead>
-                <tr>
-                    <th scope="col" class="text-center"></th>
-                    <th scope="col" class="text-center"># <br> Correct</th>
-                    <th scope="col" class="text-center"># <br> Missed</th>
-                    <th scope="col" class="text-center"># of<br> Attempts</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td scope="row">Visual Sequencing</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Visual Memory</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Visual Abstraction</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Auditory Sequencing</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Auditory Memory</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Auditory Abstraction</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Verbal Production</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Visual Motor Memory</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Visual Motor Learning</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Integration</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Non Verbal Concept Formation</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-                <tr>
-                    <td scope="row">Concentration</td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                    <td><input type="number" class="form-control w-25 mx-auto" placeholder=""></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-flex justify-content-between ">
+            <div>
+                <div class="input-group input-group-sm">
+                    <label for="" class="input-group-text">Age:</label>
+                    <input type="number" class="form-control form-control-sm" placeholder="" aria-label=""
+                        aria-describedby="button-addon2">
+                </div>
+            </div>
+            <div>
+                <div class="input-group input-group-sm">
+                    <label for="" class="input-group-text">Birth Date:</label>
+                    <input type="date" class="form-control form-control-sm" placeholder="" aria-label=""
+                        aria-describedby="button-addon2">
+                </div>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary bg-light text-secondary">View Profile</button>
+            <button class="btn btn-sm btn-outline-secondary bg-light text-secondary" data-bs-toggle="modal"
+                data-bs-target="#comparemodal">Compare Graphic(s)</button>
+            <button class="btn btn-sm btn-outline-secondary bg-light text-secondary">View Reports(s)</button>
+            <button class="btn btn-sm btn-outline-secondary bg-light text-secondary">Retake Tests(s)</button>
+        </div>
+        <div class="d-flex mt-2 justify-content-between">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-3 text-center"><small><strong>Date Taken (xx/xx/xx) <button class="btn btn-sm px-1"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">View Chart</button></strong></small>
+            </div>
+            <div class="col-sm-3 text-center"><small><strong>Date Taken (xx/xx/xx) <button class="btn btn-sm px-1"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">View
+                            Chart</button></strong></small></div>
+        </div>
+        <div class="d-flex mt-2 justify-content-between">
+            <div class="col-sm-4">
+                <div class="py-2"><small>Subtests</small></div>
+                <div class="py-2"><small>Visual Sequencing &nbsp;&nbsp;<span class="text-primary">(Visual
+                            Order)</span></small></div>
+                <div class="py-2"><small>Visual Memory &nbsp;&nbsp;<span class="text-primary">(Reading)</span></small>
+                </div>
+                <div class="py-2"><small>Visual Abstraction&nbsp;&nbsp; <span class="text-primary">(Understanding what
+                            is seen)</span></small></div>
+                <div class="py-2"><small>Auditory Sequencing&nbsp;&nbsp; <span class="text-primary">(Auditory
+                            Order)</span></small></div>
+                <div class="py-2"><small>Auditory Memory&nbsp;&nbsp; <span
+                            class="text-primary">(Listening)</span></small></div>
+                <div class="py-2"><small>Auditory Abstraction&nbsp;&nbsp; <span class="text-primary">(Understanding what
+                            is heard)</span></small></div>
+                <div class="py-2"><small>Verbal Production&nbsp;&nbsp; <span class="text-primary">(Word
+                            Knowledge)</span></small></div>
+                <div class="py-2"><small>Visual Motor Memory&nbsp;&nbsp; <span class="text-primary">(Writing
+                            Memory)</span></small></div>
+                <div class="py-2"><small>Visual Motor Learning&nbsp;&nbsp; <span
+                            class="text-primary">(Writing)</span></small></div>
+                <div class="py-2"><small>Integration&nbsp;&nbsp; <span class="text-primary">(Logical
+                            Reasoning)</span></small></div>
+                <div class="py-2"><small>Non Verbal Concept Formation&nbsp;&nbsp; <span class="text-primary">(Spatial
+                            Reasoning)</span></small></div>
+                <div class="py-2"><small>Concentration&nbsp;&nbsp; <span class="text-primary">(Focusing)</span></small>
+                </div>
+            </div>
+            <div class="col-sm-3 p-2 border">
+                <div class="d-flex justify-content-between mb-1">
+                    <div class="text-center lh-1"><small><strong># <br> Correct</strong></small></div>
+                    <div class="text-center lh-1"><small><strong># <br> Missed</strong></small></div>
+                    <div class="text-center lh-1"><small><strong># of<br> Attempts</strong></small></div>
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+            </div>
+            <div class="col-sm-3 p-2 border">
+                <div class="d-flex justify-content-between">
+                    <div class="text-center lh-1"><small><strong># <br> Correct</strong></small></div>
+                    <div class="text-center lh-1"><small><strong># <br> Missed</strong></small></div>
+                    <div class="text-center lh-1"><small><strong># of<br> Attempts</strong></small></div>
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                    <input type="number" class="form-control form-control-sm mx-2" placeholder="">
+                    <input type="number" class="form-control form-control-sm" placeholder="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <script src="bootstrap/js/jquery-3.2.0-jquery.min.js"></script>
+    <script src="js/code.highcharts.com-highcharts.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="container"></div>
+                    <script>
+                        var chart = Highcharts.chart("container", {
+                            chart: {
+                                type: "column",
+                            },
+
+                            title: {
+                                text: "Test xx/xx/xx",
+                            },
+
+                            legend: {
+                                align: "right",
+                                verticalAlign: "middle",
+                                layout: "vertical",
+                            },
+
+                            xAxis: {
+                                categories: [
+                                    "Forcusing",
+                                    "Reading",
+                                    "Writting",
+                                    "Listening",
+                                    "Speak",
+                                    "Logical Reasoning",
+                                    "Speacial Reasoning",
+                                    "Virtual Observation",
+                                    "Auditory Observation",
+                                    "Virtual Order",
+                                    "Auditory Order",
+                                    "Writting Memory",
+                                ],
+                                labels: {
+                                    x: 10,
+                                },
+                            },
+
+                            yAxis: {
+                                allowDecimals: false,
+                                title: {
+                                    text: "Click throughs",
+                                },
+                            },
+
+                            series: [
+                                {
+                                    // right labels
+                                    // name: "Clicks",
+                                    data: [100, 400, 300, 200, 100, 223, 124, 12, 345, 235, 86, 20],
+                                },
+                            ],
+
+                            responsive: {
+                                rules: [
+                                    {
+                                        condition: {
+                                            maxWidth: 500,
+                                        },
+                                        chartOptions: {
+                                            legend: {
+                                                align: "center",
+                                                verticalAlign: "bottom",
+                                                layout: "horizontal",
+                                            },
+                                            yAxis: {
+                                                labels: {
+                                                    align: "left",
+                                                    x: 0,
+                                                    y: -5,
+                                                },
+                                                title: {
+                                                    text: null,
+                                                },
+                                            },
+                                            subtitle: {
+                                                text: null,
+                                            },
+                                            credits: {
+                                                enabled: false,
+                                            },
+                                        },
+                                    },
+                                ],
+                            },
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- comparemodal -->
+
+    <div class="modal fade" id="comparemodal" tabindex="-1" aria-labelledby="comparemodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="comparemodalLabel">Compare Charts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                xx/xx/xx
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                xx/xx/xx
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-success w-100 mt-2">View</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
